@@ -1,0 +1,866 @@
+body{
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+    margin: 0;
+    
+}
+
+#section1{
+    height: 80vh;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.text{
+    margin-top: 60px;
+    height: 100%;
+    width: 40%;
+    
+}
+.content-img{
+    margin-top: 60px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.text span{
+    font-size: 48px;
+}
+.text p{
+    font-size: 18px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text button{
+    padding: 14px 24px 14px 24px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.text #advise{
+    border: 1px solid rgb(41, 73, 148);
+    background-color: transparent;
+    color: rgb(41, 73, 148);
+}
+.text #demo{
+    border: 1px solid rgb(50, 89, 180);
+    background-color: rgb(50, 89, 180);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.text #demo:hover{
+    background-color: rgb(41, 72, 146);
+}
+.text #advise:hover{
+    color: rgb(81, 114, 189);
+}
+#section2{
+    height: 60vh;
+    background-image: url("../img/stacked-waves-haikei.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.content-text{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.content-text h2{
+    font-size: 32px;
+    margin: 0 auto 0 auto;
+}
+.list-app {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Căn giữa .grid */
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 cột cố định */
+    gap: 40px;
+    width: fit-content; /* Chiều rộng của .grid sẽ bằng nội dung bên trong */
+    max-width: 100%; /* Đảm bảo không vượt quá container */
+}
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.card a{
+    text-decoration: none !important; 
+}
+.card p {
+    font-size: 16px;
+    color: rgb(41, 73, 148);
+    text-align: center;
+    font-weight: 700;
+}
+.card p:hover{
+    text-decoration: underline !important;
+}
+#section3 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    background: transparent; /* Remove aqua background */
+}
+
+.slideshow-list {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.slideshow {
+    position: relative;
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    will-change: transform;
+}
+.slideshow.active {
+    display: block;
+    left: 0;
+}
+
+.message {
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.author-info {
+    text-align: center; 
+}
+.name {
+    font-weight: bold;
+    color: #333;
+}
+.title {
+    font-size: 14.4px;
+    color: #666;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.prev svg,.next svg{
+    stroke: #666;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover svg,.next:hover svg{
+    stroke: #333 !important;
+}
+.dots {
+    margin-top: 310px;
+    text-align: center;
+    
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.dot:hover{
+    background-color: #333;
+}
+.dot.active {
+    height: 10px;
+    width: 10px;
+    margin-top: 20px;
+    background-color: #333;
+}
+.section4-container{
+    height: 100%;
+}
+.section4-container .content-text{
+    justify-self: center;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+.list-button .buttons{
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+.buttons .button{
+    padding: 6px 0 6px 0;
+    width: 100%;
+    
+}
+.button button{
+    width: 100%;
+    padding: 12px 0 15px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px groove ;
+    font-size: 16px;
+    font-weight: 200;
+    color:  rgb(41, 73, 148);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, 
+                opacity 0.3s ease-in-out, 
+                border-color 0.3s ease-in-out, 
+                transform 0.2s ease-in-out;
+    opacity: 0.7;
+}
+.button.active button{
+    padding: 12px 0 15px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #333;
+    font-weight: 600;
+    color: black;
+    opacity: 1;
+   
+}
+.image-container img{
+    margin-top: 40px;
+    max-height: 900px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+#section5{
+    height: 70vh;
+}
+#section5 h2{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 70px;
+}
+.section5-container,.section6-container,.section7-container,.section9-container{
+    
+    height: 100%;
+}
+.section5-gird{
+    height: 80%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
+    gap: 40px;
+    width: fit-content;
+    margin-top: 70px;
+   
+}
+.section5-gird .section5-card{
+    height: 100%;
+}
+.section5-gird .section5-card img{
+    max-width: 100%;
+}
+.section5-card h3{
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+.section5-card p{
+    margin-top: 5px;
+}
+.section5-gird .section5-card h3,p{
+    margin-left: 7px;
+}
+#section6{
+    height: 50vh;
+   
+}
+.section6-container h3{
+    font-size: 32px;
+}
+.section6-gird{
+    height: 80%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
+    gap: 40px;
+    width: fit-content;
+}
+.section6-gird .section6-card{
+    border-radius: 8px;
+    overflow: hidden;
+    height: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/mau-background-dep-41.jpg");
+    background-position: center;
+    background-size: auto;
+    cursor: pointer; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-content .box-title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-weight: 700;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    top : 0;
+    transition: top 0.3s ease-in-out;
+}
+.box-content .box-p{
+    position: relative;
+    top: -30px;
+    justify-self: center;
+    font-size: 20px;
+    opacity: 0;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+    margin-top: 0;
+}
+.section6-card:hover .box-title{
+    top: -70px;
+}
+.section6-card:hover .box-p{
+    top: -40px;
+    opacity: 1;
+}
+#section7{
+    height: 120vh;
+}
+.section7-content{
+    text-align: center;
+}
+.section7-content h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+    
+}
+.section7-content p{
+    font-size: 20px;
+    color: #888;;
+    font-stretch: condensed;
+    margin-top: 10px;
+}
+.section7-grid{
+    height: 102%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
+    gap: 40px;
+    width: fit-content;
+    /* margin-top: 70px; */
+
+}
+.section7-grid .section7-card{
+    height: 85%;
+    border: 1px groove rgba(176, 184, 190, 0.626);
+    border-radius: 7px;
+}
+.section7-card .text-content{
+    margin: 16px 16px 16px 16px;
+}
+.text-content h5{
+    font-size: 20px;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+.text-content strong{
+    font-size: 40px;
+}
+.text-content small{
+    color : rgba(33, 37, 41, 0.7);
+}
+.text-content p{
+    margin-left: 0 !important;
+    margin-right: 35px;
+    font-size: 14px;
+}
+.text-content button{
+    border-radius: 7px;
+    border: 1px solid rgb(50, 89, 180);
+    color: rgb(50, 89, 180);
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 12px 8px 12px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.text-content button:hover{
+    color: white;
+    background-color:rgb(50, 89, 180) ;
+}
+.sev-list ul{
+    padding: 0;
+    margin: 0 10px 0 10px;
+    list-style: none;
+}
+.sev-list i{
+    margin-right: 10px;
+    color:  rgb(60, 140, 255);
+}
+.sev-list li{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.sev-list hr{
+    border: 1px groove ;
+}
+#section8{
+    height: auto;
+    margin-bottom: 20px;
+}
+.collapse {
+    display: inline;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.collapse li {
+    cursor: pointer;
+    padding: 10px;
+}
+.collapse li span{
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.collapse i{
+    rotate: -90deg;
+    transition: rotate 0.3s ease-in-out;
+}
+.content-li {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
+    padding-left: 10px;
+}
+.content-li li{
+    padding-bottom: 0px !important;
+    padding-top: 0px  !important
+}
+.content-li li p{
+    font-size: 16px;
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+}
+.collapse > li:hover .content-li {
+    max-height: 500px;
+    opacity: 1;
+}
+.collapse > li:hover>i{
+    rotate: 90deg;
+}
+#section9{
+    height: auto;
+}
+
+.section9-content{
+    padding: 40px 40px 40px 40px;
+    height: 55%;
+    border-radius: 7px;
+    background-color: rgb(41, 73, 148);
+    /* margin: 0 auto 0 auto; */
+}
+.section9-content h2{
+    font-size: 40px;
+    justify-self: center;
+    margin-top: 0px !important;
+    color: white;
+    margin-bottom: 0px !important;
+}
+.section9-content p{
+    font-size: 20px;
+    justify-self: center;
+    color: white;
+}
+.content-btn{
+    display: flex;
+    align-items: center;
+}
+.content-btn a{
+    margin:  20px auto 0 auto;
+}
+.content-btn button{
+    font-size: 20px;
+    padding: 18px 24px 18px 24px;
+    color: rgb(33, 37, 41);
+    border-radius: 7px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+.content-btn button:hover{
+    background-color: rgb(227, 225, 225);
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1250px;
+    }
+    .content-img img:last-child {
+        position: absolute !important;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    #section1,
+    #section2,
+    #section3,
+    #section5,
+    .section5-card,
+    #section6,
+    #section9{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: auto !important;
+    }
+    #section7{
+        height: auto !important;
+        
+    }
+    
+    .section7-grid{
+        height: 85%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: fit-content;
+        padding-bottom: 20px;
+        /* margin-top: 70px; */
+    
+    }
+    .section7-grid .section7-card{
+        height: 100%;
+        border: 1px groove rgba(176, 184, 190, 0.626);
+        border-radius: 7px;
+    }
+}
+@media (max-width: 1199px) {
+    #section1,
+    #section2,
+    #section3,
+    #section5,
+    .section5-card,
+    #section6{
+        height: auto;
+    }
+    #section7{
+        height: auto;
+        
+       
+    }
+    #section9{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .section7-grid{
+        height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: fit-content;
+        padding-bottom: 50px;
+        /* margin-top: 70px; */
+    
+    }
+    .section7-grid .section7-card{
+        height: 100%;
+        border: 1px groove rgba(176, 184, 190, 0.626);
+        border-radius: 7px;
+    }
+   
+}
+@media (max-width: 991px){
+    .section5-card{
+        height: auto !important;
+       
+    }
+    #section1{
+        height: 130vh;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .text {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .content-img {
+        width: 90%;
+        justify-content: left;
+        position: relative;
+        margin-top: 20px;
+    }
+    .content-img img {
+        max-width: 100%;
+    }
+    .content-img img:first-child {
+        display: none;
+    }
+    .content-img img:last-child {
+        position: static !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        height: auto !important;
+        border-radius: 10px ;
+        margin-top: 30px;
+       
+    }
+    #section2{
+        height: auto;
+        
+    }
+    .content-text h2{
+        font-size: 27px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 6 cột cố định */
+        gap: 55px;
+        width: fit-content;
+        max-width: 100%; 
+    }
+    #section3 {
+        height: 40vh;
+        background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* Gradient to match the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #section5{
+        height: auto;
+    }
+    .section5-gird{
+        height: 80%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 6 cột cố định */
+        gap: 40px;
+        width: fit-content;
+        margin-top: 70px;
+       
+    }
+    #section6{
+        height: 130vh;
+        
+    }
+    .section6-gird{
+        height: 80%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        width: fit-content;
+    }
+    #section7{
+        
+        height: auto;
+        margin-bottom: 30px;
+
+    }
+    .section7-grid{
+        height: 95%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: fit-content;
+        padding-bottom: 20px;
+        /* margin-top: 70px; */
+    
+    }
+    .section7-grid .section7-card{
+        height: 100%;
+        border: 1px groove rgba(176, 184, 190, 0.626);
+        border-radius: 7px;
+    }
+    
+}
+@media (max-width: 767px){
+    
+    #section1{
+        height: auto;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .text {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .content-img {
+        width: 90%;
+        justify-content: left;
+        position: relative;
+        margin-top: 20px;
+    }
+    .content-img img {
+        height: auto;
+        max-width: 100%;
+    }
+    .content-img img:first-child {
+        display: none;
+    }
+    .content-img img:last-child {
+        position: static !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        height: auto !important;
+        border-radius: 10px ;
+        margin-top: 30px;
+       
+    }
+    #section2{
+        height: auto;
+        
+    }
+    .content-text h2{
+        font-size: 27px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
+        gap: 55px;
+        width: fit-content;
+        max-width: 100%; 
+    }
+    #section3 {
+        height: auto;
+        background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* Gradient to match the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #section5{
+        height: auto;
+    }
+    .section5-gird{
+        height: 80%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 6 cột cố định */
+        gap: 40px;
+        width: fit-content;
+        margin-top: 70px;
+       
+    }
+    #section6{
+        height: auto;
+        
+    }
+    .section6-gird{
+        height: 70%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        width: fit-content;
+    }
+    #section7{
+        height: auto;
+
+    }
+    .section7-grid{
+        height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: fit-content;
+        padding-bottom: 20px;
+        /* margin-top: 70px; */
+    
+    }
+    .section7-grid .section7-card{
+        height: 100%;
+        border: 1px groove rgba(176, 184, 190, 0.626);
+        border-radius: 7px;
+    }
+    
+} 

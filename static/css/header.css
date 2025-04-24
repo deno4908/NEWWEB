@@ -1,0 +1,150 @@
+*{
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif ;
+}
+.app {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.left, .right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.left {
+    flex-grow: 1;
+}
+.right {
+    justify-content: flex-end;
+}
+  
+.app li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.app li button{
+    font-size: 18px;
+    background-color: rgb(50, 89, 180);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}  
+.app li button:hover{
+    background-color: rgb(45, 79, 160);
+}
+.app li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}
+  
+.app li a i {
+    padding-right: 10px;
+}
+
+.app li a:hover {
+    color: rgba(0, 0, 0);
+}
+.menu-items{
+   display: none !important;
+   cursor: pointer;
+}
+.offcanvas{
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+    opacity: 0;
+
+}
+.offcanvas.open{
+    position: fixed;
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+    top: 0;
+    right: 0;
+    transition: right 0.3s ease-in-out; 
+    opacity: 1;
+    overflow: visible;
+}
+.x-icon{
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+}
+.x-icon i{
+   font-size: 30px;
+}
+.list-menu{
+    padding-left: 15px;
+    list-style: none;
+    margin-top: 50px;
+    
+}
+.list-menu li{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.list-menu li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}
+.list-menu li a i {
+    padding-right: 10px;
+}
+.x-icon i{
+    cursor: pointer;
+}
+.button-items button{
+    font-size: 18px;
+    background-color: rgb(50, 89, 180);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+    
+}
+.button-items{
+    justify-content: space-between;
+}
+@media (max-width: 1199px){
+    .logo a img{
+        height: 50%;
+    }
+    .x-icon{
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+    .app li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0px;
+        font-size: 18px;
+    }
+    .items{
+        display: none !important;
+    }
+    .menu-items{
+        display: flex !important;
+        margin-right: 20px;
+     }
+}
