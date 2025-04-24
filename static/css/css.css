@@ -3,6 +3,11 @@ body{
     margin: 0;
     
 }
+html, body {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
 
 #section1{
     height: 80vh;
@@ -551,6 +556,18 @@ body{
 .content-btn button:hover{
     background-color: rgb(227, 225, 225);
 }
+.container,
+.content,
+.content-img,
+.text,
+.grid,
+.section5-grid,
+.section6-grid,
+.section7-grid {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -654,7 +671,7 @@ body{
        
     }
     #section1{
-        height: 130vh;
+        height: auto;
     }
     .content {
         flex-direction: column;
@@ -697,7 +714,7 @@ body{
     }
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 6 cột cố định */
+        grid-template-columns: repeat(4, 1fr); 
         gap: 55px;
         width: fit-content;
         max-width: 100%; 
@@ -716,7 +733,7 @@ body{
         height: 80%;
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* 6 cột cố định */
+        grid-template-columns: repeat(1, 1fr); 
         gap: 40px;
         width: fit-content;
         margin-top: 70px;
@@ -759,108 +776,55 @@ body{
     
 }
 @media (max-width: 767px){
-    
-    #section1{
-        height: auto;
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
     }
+
+    #section1 {
+        height: auto;
+        padding: 20px 0;
+    }
+
     .content {
         flex-direction: column;
-        align-items: center;
-        text-align: left;
+        align-items: flex-start;
     }
-    .text {
-        width: 90%;
-        margin-top: 20px;
-    }
-    .content-img {
-        width: 90%;
-        justify-content: left;
-        position: relative;
-        margin-top: 20px;
-    }
-    .content-img img {
-        height: auto;
-        max-width: 100%;
-    }
-    .content-img img:first-child {
-        display: none;
-    }
-    .content-img img:last-child {
-        position: static !important;
-        width: 100% !important;
-        max-width: 500px !important;
-        height: auto !important;
-        border-radius: 10px ;
-        margin-top: 30px;
-       
-    }
-    #section2{
-        height: auto;
-        
-    }
-    .content-text h2{
-        font-size: 27px;
-        margin: 0 auto 0 auto;
-        text-align: center;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
-        gap: 55px;
-        width: fit-content;
-        max-width: 100%; 
-    }
-    #section3 {
-        height: auto;
-        background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* Gradient to match the image */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #section5{
-        height: auto;
-    }
-    .section5-gird{
-        height: 80%;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* 6 cột cố định */
-        gap: 40px;
-        width: fit-content;
-        margin-top: 70px;
-       
-    }
-    #section6{
-        height: auto;
-        
-    }
-    .section6-gird{
-        height: 70%;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
-        width: fit-content;
-    }
-    #section7{
-        height: auto;
 
+    .text,
+    .content-img {
+        width: 100%;
+        margin-top: 10px;
     }
-    .section7-grid{
-        height: 100%;
+
+    .content-img img:last-child {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    .section5-grid,
+    .section6-grid,
+    .section7-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .slideshow-container {
         max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-        width: fit-content;
-        padding-bottom: 20px;
-        /* margin-top: 70px; */
-    
-    }
-    .section7-grid .section7-card{
-        height: 100%;
-        border: 1px groove rgba(176, 184, 190, 0.626);
-        border-radius: 7px;
+        padding: 0 10px;
     }
     
 } 
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 15px;
+    }
+}

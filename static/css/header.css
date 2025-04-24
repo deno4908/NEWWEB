@@ -48,7 +48,6 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 0.65);
 }
-  
 .app li a i {
     padding-right: 10px;
 }
@@ -68,7 +67,7 @@
     background-color: white;
     transition: right 0.3s ease-in-out;
     opacity: 0;
-
+    z-index: 100000;
 }
 .offcanvas.open{
     position: fixed;
@@ -147,4 +146,17 @@
         display: flex !important;
         margin-right: 20px;
      }
+}
+@media (max-width: 767px){
+    .offcanvas.open{
+        position: fixed;
+        height: 100vh;
+        width: auto;
+        background-color: white;
+        top: 0;
+        right: 0;
+        transition: right 0.3s ease-in-out; 
+        opacity: 1;
+        overflow: visible;
+    }
 }
