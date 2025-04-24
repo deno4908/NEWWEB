@@ -13,41 +13,118 @@
 </head>
 <body>
     <header style="height: 10vh; width: 100%; ">
-        <div class="container" style="height: 100%; width: 100%;">
-           
-                <ul class="app" style="height: 100%; padding: 0px;" >
-                    <div class="left" style="height: 100%;">
-                        <li class="logo"><a style="height: 100%;" href="#"><img src="static/img/Hola.png" alt="" height="70%"></a></li>
-                        <li class="items"><a href="">Ứng Dụng</a></li>
-                        <li class="items"><a href="">Giải Pháp</a></li>
-                        <li class="items"><a href="">Bảng giá</a></li>
-                        <li class="items"><a href="">Câu truyện thành công</a></li>
-                        <li class="items"><a href="">Đặt lịch tư vẫn</a></li>
-                    </div>  
-                    <div class="right" style="height: 100%;">
-                        <li class="items"><a href=""><i class="fa-solid fa-phone"></i>0123456789</a></li>
-                        <li class="items"><button>Liên hệ ngay</button></li>
-                        <li class="menu-items"><i class="fa-solid fa-bars"></i></li>
-                    </div>  
-                </ul>
-        </div>
-        <div class="offcanvas">
-            <div class="x-icon">
-                <i class="fa-solid fa-xmark"></i>
+        <nav class="navbar">
+            <div class="nav-container">
+              <a href="#" class="nav-logo">
+                <img src="static/img/Hola.png" alt="Logo">
+              </a>
+              <ul class="nav-links">
+                <li class="nav-item-wrapper">
+                  <div class="NavContent" id="TinhNang">Tính Năng</div>
+                  <div class="dropdown-menu" id="featuresMenu">
+                    <div class="feature-grid">
+                      <div class="feature-column">
+                        <a href="#" class="feature-item"><img src="static/img/crm.svg"><span>CRM</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/Sales.svg"><span>Bán hàng</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/POS.png"><span>POS</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/erp thuong mai.svg"><span>eCommerce</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/mxh.png"><span>Marketing</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/web.png"><span>Website</span></a>
+                      </div>
+                      <div class="feature-column">
+                        <a href="#" class="feature-item"><img src="static/img/erp kho van.svg"><span>Kho vận</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/san xuat.svg"><span>Sản xuất</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/mua-hang.png"><span>Mua hàng</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/qc.png"><span>QC</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/bao-tri.png"><span>Bảo trì</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/cai-tien.png"><span>Cải tiến</span></a>
+                      </div>
+                      <div class="feature-column">
+                        <a href="#" class="feature-item"><img src="static/img/helpdesk.png"><span>Hỗ trợ</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/lich.png"><span>Đặt lịch hẹn</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/timesheet.png"><span>Dịch vụ</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/ke-hoach.png"><span>Kế hoạch</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/khao-sat.png"><span>Khảo sát</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/event.png"><span>Sự kiện</span></a>
+                      </div>
+                      <div class="feature-column">
+                        <a href="#" class="feature-item"><img src="static/img/ketoan.png"><span>Kế toán</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/hr.png"><span>Nhân sự</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/tri-thuc.png"><span>Tri thức</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/doc.png"><span>Tài liệu</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/quy-trinh.png"><span>Quy trình</span></a>
+                        <a href="#" class="feature-item"><img src="static/img/thao-luan.png"><span>Thảo luận</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+        
+                <li class="nav-item-wrapper">
+                  <div class="NavContent" id="GiaiPhap">Giải Pháp</div>
+                  <div class="dropdown-menu" id="solutionsMenu">
+                    <div class="solutions-grid">
+                      <a href="#" class="solution-card"><img src="static/img/Ecommerce.png"><h4>HolaEcommerce</h4><p>Nền tảng thương mại điện tử, tích hợp vói các sàn như Shopee, Lazada</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/WMS.png"><h4>HolaWMS</h4><p>Hệ thống vận hành kho chuyên nghiệp, dữ liệu theo thời gian thực</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/MRP.png"><h4>HolaMRP</h4><p>Hệ thống quản trị sản xuất tinh gọn, tự động hóa và liền mạch</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/DMS.png"><h4>HolaDMS</h4><p>Hệ thống phân phối, theo dõi và giám sát hiệu quả của nhân viên, đại lý</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/Books.png"><h4>HolaBooks</h4><p>Tự động hóa nghiệp vụ kế toán cho doanh nghiệp vừa và nhỏ</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/HRM.png"><h4>HolaHRM</h4><p>Quản trị nhân sự toàn diện, xây dựng hệ thống đào tạo và phát triển đội ngũ</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/Work.png"><h4>HolaWORK</h4><p>Kiến tạo môi trường làm việc trực tuyến cho doanh nghiệp</p></a>
+                      <a href="#" class="solution-card"><img src="static/img/erp kho van.svg"><h4>HolaERP</h4><p>Nền tảng quản trị toàn diện cho doanh nghiệp, tất cả trên cùng 1 nơi</p></a>
+                    </div>
+                  </div>
+                </li>
+        
+                <li><a href="#" class="NavContent" id="GiaCa">Giá Cả</a></li>
+                <li><a href="#" class="NavContent" id="LienHe">Liên Hệ</a></li>
+                <li><a href="#" class="NavContent" id="DangNhap">Đăng Nhập</a></li>
+                <li><a href="#" class="NavContent" id="DangKy">Đăng Ký</a></li>
+               
+              </ul>
             </div>
-            <div class="offcanvas-menu" style="display: inline;">
-                <ul class="list-menu">
-                    <li><a href="">Ứng dụng</a></li>
-                    <li><a href="">Giải pháp</a></li>
-                    <li><a href="">Bảng giá</a></li>
-                    <li><a href="">Câu chuyện thành công</a></li>
-                    <li><a href="">Đặt lịch tư vấn</a></li>
-                    <hr>
-                    <li><a href=""><i class="fa-solid fa-phone"></i>0123456789</a></li>
-                    <li class="button-items"><button>Liên hệ ngay</button></li>
-
-                </ul>   
+            <div class="offcanvas-icon">
+               <i class="fa-solid fa-bars" id="MENU" style="font-size: 25px; display: none"></i>
             </div>
+            <div class="offcanvas-menu">
+                <div class="x-icon"><i class="fa-solid fa-xmark"></i></div>
+                <div class="list-content">
+                    <ul class="offcanvas-contents menu">
+                        <li><i class="fa-solid fa-gears"></i>Tính Năng
+                            <ul class="dropdown-menu2">
+                                <a href="#" class="feature-item"><img src="static/img/crm.svg"><span>CRM</span></a>
+                                <a href="#" class="feature-item"><img src="static/img/Sales.svg"><span>Bán hàng</span></a>
+                                <a href="#" class="feature-item"><img src="static/img/POS.png"><span>POS</span></a>
+                                <a href="#" class="feature-item"><img src="static/img/erp thuong mai.svg"><span>eCommerce</span></a>
+                                <a href="#" class="feature-item"><img src="static/img/mxh.png"><span>Marketing</span></a>
+                                <a href="#" class="feature-item"><img src="static/img/web.png"><span>Website</span></a>
+                            </ul>
+                        </li>
+                        <li><i class="fa-solid fa-chart-simple"></i>Giải Pháp
+                            <ul class="dropdown-menu2">
+                                <a href="#" class="feature-item"><h4>HolaEcommerce</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaWMS</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaMRP</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaDMS</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaBooks</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaHRM</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaWORK</h4></a>
+                                <a href="#" class="feature-item"><h4>HolaERP</h4></a>
+                            </ul>
+                        </li>
+                        <li><i class="fa-solid fa-credit-card"></i>Giá Cả</li>
+                        <li><i class="fa-solid fa-phone"></i>Liên Hệ</li>
+                        <hr>
+                        <div class="bottom-menu-items">
+                            <ul class="offcanvas-contents bottom" style="padding: 0; ">
+                                <li><i class="fa-solid fa-user"></i>Đăng Nhập</li>
+                                <li><i class="fa-solid fa-user-plus"></i>Đăng Ký</li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          
         </div>
     </header>
     <main>

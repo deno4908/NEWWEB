@@ -67,10 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".menu-items").addEventListener("click", () => {
-        document.querySelector(".offcanvas").classList.add("open");
+    document.getElementById("MENU").addEventListener("click", () => {
+        document.querySelector(".offcanvas-menu").classList.add("open");
     })
     document.querySelector(".x-icon").addEventListener("click", () => {
-        document.querySelector(".offcanvas").classList.remove("open");
+        document.querySelector(".offcanvas-menu").classList.remove("open");
     });
 });

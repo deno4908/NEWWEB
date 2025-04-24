@@ -640,8 +640,6 @@ html, body {
     }
     #section7{
         height: auto;
-        
-       
     }
     #section9{
         height: auto;
@@ -725,6 +723,12 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .list-button{
+        width: auto;
+    }
+    .buttons{
+        width: auto;
     }
     #section5{
         height: auto;
@@ -810,6 +814,15 @@ html, body {
     #section3{
         background-color: red;
         height:  auto;
+    }
+    #section4{
+        width: auto;
+    }
+    .list-button{
+        width: auto;
+    }
+    .buttons{
+        width: auto;
     }
     .section5-grid,
     .section6-grid,
