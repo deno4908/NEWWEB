@@ -124,6 +124,7 @@
     justify-content: space-between;
 }
 @media (max-width: 1199px){
+   
     .logo a img{
         height: 50%;
     }
