@@ -821,7 +821,7 @@ html, body {
     .list-button{
         width: auto;
     }
-    .buttons{
+    .buttons .button{
         width: auto;
     }
     .section5-grid,
