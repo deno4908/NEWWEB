@@ -503,6 +503,8 @@ html, body {
     opacity: 0;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
     padding-left: 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 7px;
 }
 .content-li li{
     padding-bottom: 0px !important;
