@@ -1,5 +1,5 @@
 body{
-    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+    font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif;
     margin: 0;
     
 }
@@ -90,14 +90,14 @@ html, body {
 .list-app {
     margin-top: 40px;
     display: flex;
-    justify-content: center; /* Căn giữa .grid */
+    justify-content: center;
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 cột cố định */
+    grid-template-columns: repeat(6, 1fr);
     gap: 40px;
-    width: fit-content; /* Chiều rộng của .grid sẽ bằng nội dung bên trong */
-    max-width: 100%; /* Đảm bảo không vượt quá container */
+    width: fit-content; 
+    max-width: 100%; 
 }
 .card {
     
@@ -249,11 +249,11 @@ html, body {
     display: flex;
     width: 100%;
     padding: 0;
+
 }
 .buttons .button{
     padding: 6px 0 6px 0;
     width: 100%;
-    
 }
 .button button{
     width: 100%;
@@ -336,20 +336,25 @@ html, body {
     height: 80%;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 6 cột cố định */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 40px;
     width: fit-content;
 }
 .section6-gird .section6-card{
     border-radius: 8px;
-    overflow: hidden;
     height: 90%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/mau-background-dep-41.jpg");
-    background-position: center;
-    background-size: auto;
     cursor: pointer; 
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.section6-card.one{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/image-44.webp");
+}
+.section6-card.two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/9736.jpg_wh860.jpg");
+}
+.section6-card.three{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/1783.jpg_wh860.jpg");
 }
 .box-content .box-title{
     font-size: 32px;
@@ -630,6 +635,13 @@ html, body {
     }
 }
 @media (max-width: 1199px) {
+    #anh1{
+        height: 480px !important;
+        width: 470px !important;
+    }
+    #anh2{
+        right: 350px !important;
+    }
     #section1,
     #section2,
     #section3,
@@ -637,6 +649,10 @@ html, body {
     .section5-card,
     #section6{
         height: auto;
+    }
+    .section6-card{
+        height: auto;
+        
     }
     #section7{
         height: auto;
@@ -744,16 +760,20 @@ html, body {
        
     }
     #section6{
-        height: 130vh;
-        
+        height: auto;
     }
     .section6-gird{
-        height: 80%;
+        height: auto;
+        width: auto;
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
-        width: fit-content;
+        
+    }
+    .section6-card{
+        height: auto;
+        
     }
     #section7{
         
@@ -812,18 +832,21 @@ html, body {
         gap: 20px;
     }
     #section3{
-        background-color: red;
         height:  auto;
     }
     #section4{
         width: auto;
     }
+    #section6{
+        width: auto;
+    }
     .list-button{
         width: auto;
     }
-    .buttons .button{
+    .buttons{
         width: auto;
     }
+    
     .section5-grid,
     .section6-grid,
     .section7-grid {
@@ -831,7 +854,18 @@ html, body {
         gap: 20px;
         padding: 0 10px;
     }
-
+    .section6-gird{
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 10px;
+        width: fit-content;
+    }
+    .section6-card{
+        height: auto;
+    }
     .slideshow-container {
         max-width: 100%;
         padding: 0 10px;
@@ -843,4 +877,14 @@ html, body {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         gap: 15px;
     }
+    #section4{
+        width: auto;
+    }
+    .list-button{
+        width: auto;
+    }
+    .buttons{
+        width: auto;
+    }
+    
 }
