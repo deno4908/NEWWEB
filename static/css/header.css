@@ -260,6 +260,11 @@ body {
 }
 .dropdown-menu2 a{
   width: 80%;
+  
+}
+.menu li a{
+  text-decoration: none;
+  color: rgb(41, 72, 146);
 }
 
 .offcanvas-contents li i{
@@ -286,7 +291,7 @@ body {
     display: inline !important;
   }
   .offcanvas-menu.open{
-    width: auto;
+    width: 50%;
   }
   .dropdown-menu2 a{
     width: auto;
